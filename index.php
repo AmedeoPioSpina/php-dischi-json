@@ -4,12 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <div id="app">
-
+        <div class="container">
+            <ul>
+                <li v-for="(disk,index) in tempDisksList">
+                    <img :src="disk.disk_img" alt="">
+                    <h2>
+                        {{disk.name}}
+                    </h2>
+                    <p>
+                        {{disk.author}}
+                    </p>
+                    <p>
+                        {{disk.year}}
+                    </p>
+                </li>
+            </ul>
+        </div>
     </div>
     <script src="./js/script.js"></script>
 </body>
