@@ -4,17 +4,40 @@
   box-sizing: border-box;
 }
 
-.container ul {
+header {
+  padding: 1rem 5rem;
+  background-color: #06131F;
+}
+header img {
+  width: 3rem;
+}
+
+main {
+  background-color: #1D2D3C;
+}
+main ul {
   list-style: none;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 3rem 20rem;
 }
-.container ul li {
+main ul li {
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  color: white;
+  background-color: #112030;
+  width: 20rem;
+  border-radius: 0.2rem;
 }
-.container ul li img {
-  width: 5rem;
-  height: 5rem;
+main ul li img {
+  width: 15rem;
+  height: 15rem;
+}
+main ul li h2 {
+  padding: 1rem 0 0.2rem 0;
 }/*# sourceMappingURL=style.css.map */

@@ -10,7 +10,10 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <div id="app">
-        <div class="container">
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spotify_icon.svg/1982px-Spotify_icon.svg.png" alt="Spotify logo">
+        </header>
+        <main>
             <ul>
                 <li v-for="(disk,index) in tempDisksList">
                     <img :src="disk.disk_img" alt="">
@@ -25,7 +28,7 @@
                     </p>
                 </li>
             </ul>
-        </div>
+        </main>
     </div>
     <script src="./js/script.js"></script>
 </body>
